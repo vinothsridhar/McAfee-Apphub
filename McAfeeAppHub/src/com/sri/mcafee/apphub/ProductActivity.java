@@ -47,6 +47,10 @@ public class ProductActivity extends BaseActivity {
 
 	private void initComponents() {
 		int index = getIntent().getIntExtra(McAfeeApphub.PRODUCT_POSITION, 0);
+		if (McAfeeApphub.getProductList() == null) {
+			finish();
+			return;
+		}
 		selectedProduct = McAfeeApphub.getProductList().get(index);
 		setTitle(selectedProduct.getName());
 		getSupportActionBar().setDisplayHomeAsUpEnabled(true);

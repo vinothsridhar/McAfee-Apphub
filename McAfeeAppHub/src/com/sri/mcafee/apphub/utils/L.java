@@ -4,8 +4,8 @@ import android.util.Log;
 
 public class L {
 
-	private static final boolean debug = true;
-	private static final String TAG = "CricBuzzChallenge";
+	private static final boolean debug = false;
+	private static final String TAG = "McAfeeApphub";
 
 	public static void i(String msg) {
 		i(TAG, msg);
